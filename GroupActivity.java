@@ -14,7 +14,6 @@ public class GroupActivity {
 		
 		
 		do {
-
 			System.out.println("===== STUDENT GRADING SYSTEM ======");
 			System.out.println(" A - Add Student Information");
 			System.out.println(" B - Compute Student Average");
@@ -25,6 +24,7 @@ public class GroupActivity {
 
 			
 			choice = scanner.next().toUpperCase();
+            scanner.nextLine();
 			
 			System.out.println();
 			System.out.println();
@@ -34,28 +34,29 @@ public class GroupActivity {
 			case "A":
 				
 				System.out.print(" Enter Student name: ");
-				name = scanner.next().toUpperCase();
-				
+				name = scanner.nextLine().toUpperCase();
+
 				System.out.print(" Enter Student ID: ");
 				studentID = scanner.next();
-				
+                scanner.nextLine();
+
 				System.out.print(" Enter number of subjects: ");
 				subject = scanner.nextInt();
+                scanner.nextLine();
 				
 				for (int i = 1; i <= subject; i ++) {
 					System.out.print(" Enter grade for Subject " + i + ": ");
 					
 					grade = scanner.nextDouble();
+                    scanner.nextLine();
 					total += grade;
 					
 				}
 						
 				avg = total/subject;
-				
+
+				System.out.println("  ====== STUDENT SAVED! ====== ");
 				System.out.println();
-				System.out.println("====== STUDENT SAVED! =====");
-				System.out.println();
-				scanner.nextLine();
 				
 				break;
 				
@@ -78,14 +79,12 @@ public class GroupActivity {
 					System.out.println();
 					System.out.println();
 				} else {
-
-				}
-				System.out.println("No Student Record yet, please proceed to 'A - Add Student Information' ");
-				System.out.println();
-				System.out.println();
+                    System.out.println("No Student Record yet, please proceed to 'A - Add Student Information' ");
+                    System.out.println();
+                    System.out.println();
+                }
 				break;
 
-				
 			case "C":
 				// Check if there is a computation for student
 				if (status != null) {
@@ -109,7 +108,7 @@ public class GroupActivity {
 				break;
 				
 			default:
-				System.out.println("Invalid choice, please try again");
+				System.out.println("wrong ka po");
 				break;
 			}
 		} while (!choice.equals("D"));
