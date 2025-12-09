@@ -14,16 +14,16 @@ public class Car extends Vehicle implements Refuelable {
 
 		
 	public void startEngine() {
-		System.out.println("Engine started for Car");
+		System.out.println("Engine started for " + getBrand());
 	}
 	
 	public void destroy() {
-		System.out.println("Car is destroyed!");
+		System.out.println(getBrand() +" is destroyed!");
 	}
 
 	@Override
 	public void refuel() {
-		System.out.println("Car is refueled");
+		System.out.println(getBrand() +" is refueled");
 	}
 }
 

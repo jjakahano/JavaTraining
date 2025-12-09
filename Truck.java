@@ -14,16 +14,16 @@ public class Truck extends Vehicle implements Refuelable{
 
 	
 	public void startEngine() {
-		System.out.println("Engine started for Truck");
+		System.out.println("Engine started for " + getBrand());
 	}
 	
 	public void destroy() {
-		System.out.println("Truck is destroyed!");
+		System.out.println(getBrand() + " is destroyed!");
 	}
 	
 	
 	@Override
 	public void refuel() {
-		System.out.println("Truck is refueled");
+		System.out.println(getBrand() + " is refueled");
 	}
 }
