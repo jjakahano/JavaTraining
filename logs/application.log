@@ -1,9 +1,0 @@
-2026-01-19 02:14:24.502 [INFO] M4_Activity7.LoggingExample - Withdrawal request: P3000.0
-2026-01-19 02:14:24.505 [INFO] M4_Activity7.LoggingExample - Successfully withdrawn: P3000.0
-2026-01-19 02:14:24.506 [INFO] M4_Activity7.LoggingExample - Withdrawal request: P5000.0
-2026-01-19 02:14:24.506 [INFO] M4_Activity7.LoggingExample - Successfully withdrawn: P5000.0
-2026-01-19 02:14:24.506 [INFO] M4_Activity7.LoggingExample - Withdrawal request: P4000.0
-2026-01-19 02:14:24.506 [WARN] M4_Activity7.LoggingExample - You are withdrawing more than your current balance! Balance = P2000.0
-2026-01-19 02:14:24.506 [INFO] M4_Activity7.LoggingExample - Successfully withdrawn: P4000.0
-2026-01-19 02:14:24.506 [ERROR] M4_Activity7.LoggingExample - You are not depositing a valid amount: -2000.0, should be greater than Zero
-2026-01-19 02:14:24.507 [INFO] M4_Activity7.LoggingExample - Successfully deposited: P5000.0, New balance: P3000.0

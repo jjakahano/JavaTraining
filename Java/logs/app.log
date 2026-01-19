@@ -1,0 +1,56 @@
+2026-01-20 01:08:24.210 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:08:24.214 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: 5000.0 
+2026-01-20 01:08:24.214 [INFO] M4_Activity8.BankAccount - DEPOSIT COMPLETE: 5000.0, New Balance: 15000.0
+2026-01-20 01:08:24.215 [INFO] M4_Activity8.BankAccount - === STARTING Withdrawal TEST ===
+2026-01-20 01:08:24.215 [INFO] M4_Activity8.BankAccount - WITHDRAW AMOUNT REQUESTED: 3000.0 
+2026-01-20 01:08:24.215 [INFO] M4_Activity8.BankAccount - WITHDRAW COMPLETE: 3000.0, New Balance: 12000.0
+2026-01-20 01:08:24.216 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:08:24.216 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: -500.0 
+2026-01-20 01:08:24.216 [ERROR] M4_Activity8.BankAccount - INVALID DEPOSIT AMOUNT: -500.0 
+2026-01-20 01:08:24.216 [ERROR] M4_Activity8.BankAccount - failed Amount cannot be negative or equal to 0
+M4_Activity8.InvalidAmountException: Amount cannot be negative or equal to 0
+	at M4_Activity8.BankAccount.deposit(BankAccount.java:36)
+	at M4_Activity8.BankAccount.lambda$main$2(BankAccount.java:64)
+	at M4_Activity8.BankAccount.runTest(BankAccount.java:53)
+	at M4_Activity8.BankAccount.main(BankAccount.java:64)
+2026-01-20 01:08:24.219 [INFO] M4_Activity8.BankAccount - === STARTING Withdrawal TEST ===
+2026-01-20 01:08:24.219 [INFO] M4_Activity8.BankAccount - WITHDRAW AMOUNT REQUESTED: 20000.0 
+2026-01-20 01:08:24.220 [WARN] M4_Activity8.BankAccount - INVALID AMOUNT: 20000.0 
+2026-01-20 01:08:24.220 [ERROR] M4_Activity8.BankAccount - failed Not enough balance
+M4_Activity8.InsufficientFundsException: Not enough balance
+	at M4_Activity8.BankAccount.withdraw(BankAccount.java:22)
+	at M4_Activity8.BankAccount.lambda$main$3(BankAccount.java:65)
+	at M4_Activity8.BankAccount.runTest(BankAccount.java:53)
+	at M4_Activity8.BankAccount.main(BankAccount.java:65)
+2026-01-20 01:08:24.221 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:08:24.221 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: 60000.0 
+2026-01-20 01:08:24.221 [WARN] M4_Activity8.BankAccount - AMOUNT DEPOSITED IS GREATER THAN 50000
+2026-01-20 01:08:24.221 [INFO] M4_Activity8.BankAccount - DEPOSIT COMPLETE: 60000.0, New Balance: 72000.0
+2026-01-20 01:21:56.903 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:21:56.905 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: 5000.0 
+2026-01-20 01:21:56.906 [INFO] M4_Activity8.BankAccount - DEPOSIT COMPLETE: 5000.0, New Balance: 15000.0
+2026-01-20 01:21:56.907 [INFO] M4_Activity8.BankAccount - === STARTING Withdrawal TEST ===
+2026-01-20 01:21:56.907 [INFO] M4_Activity8.BankAccount - WITHDRAW AMOUNT REQUESTED: 3000.0 
+2026-01-20 01:21:56.907 [INFO] M4_Activity8.BankAccount - WITHDRAW COMPLETE: 3000.0, New Balance: 12000.0
+2026-01-20 01:21:56.907 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:21:56.907 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: -500.0 
+2026-01-20 01:21:56.908 [ERROR] M4_Activity8.BankAccount - INVALID DEPOSIT AMOUNT: -500.0 
+2026-01-20 01:21:56.908 [ERROR] M4_Activity8.BankAccount - failed Amount cannot be negative or equal to 0
+M4_Activity8.InvalidAmountException: Amount cannot be negative or equal to 0
+	at M4_Activity8.BankAccount.deposit(BankAccount.java:36)
+	at M4_Activity8.BankAccount.lambda$main$2(BankAccount.java:64)
+	at M4_Activity8.BankAccount.runTest(BankAccount.java:53)
+	at M4_Activity8.BankAccount.main(BankAccount.java:64)
+2026-01-20 01:21:56.910 [INFO] M4_Activity8.BankAccount - === STARTING Withdrawal TEST ===
+2026-01-20 01:21:56.910 [INFO] M4_Activity8.BankAccount - WITHDRAW AMOUNT REQUESTED: 20000.0 
+2026-01-20 01:21:56.910 [WARN] M4_Activity8.BankAccount - INVALID AMOUNT: 20000.0 
+2026-01-20 01:21:56.910 [ERROR] M4_Activity8.BankAccount - failed Not enough balance
+M4_Activity8.InsufficientFundsException: Not enough balance
+	at M4_Activity8.BankAccount.withdraw(BankAccount.java:22)
+	at M4_Activity8.BankAccount.lambda$main$3(BankAccount.java:65)
+	at M4_Activity8.BankAccount.runTest(BankAccount.java:53)
+	at M4_Activity8.BankAccount.main(BankAccount.java:65)
+2026-01-20 01:21:56.911 [INFO] M4_Activity8.BankAccount - === STARTING Deposit TEST ===
+2026-01-20 01:21:56.911 [INFO] M4_Activity8.BankAccount - DEPOSIT AMOUNT REQUESTED: 60000.0 
+2026-01-20 01:21:56.911 [WARN] M4_Activity8.BankAccount - AMOUNT DEPOSITED IS GREATER THAN 50000
+2026-01-20 01:21:56.911 [INFO] M4_Activity8.BankAccount - DEPOSIT COMPLETE: 60000.0, New Balance: 72000.0
