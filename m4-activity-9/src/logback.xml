@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%level] %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ROLLING DAILY -->
+    <appender name="DAILY-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!-- Current Log file -->
+    <file>logs/bank-app.log</file>
+
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <!-- File name Pattern -->
+        <fileNamePattern>logs/bank-app-%d{yyyy-MM-dd}.log</fileNamePattern>
+
+        <!-- Keep 30 days of logs -->
+        <maxHistory>30</maxHistory>
+
+        <!-- Max total size: 1GB -->
+        <totalSizeCap>1GB</totalSizeCap>
+
+    </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/bank-app.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="DAILY-FILE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
